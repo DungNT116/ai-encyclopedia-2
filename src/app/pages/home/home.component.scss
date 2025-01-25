@@ -1,0 +1,292 @@
+img {
+  flex: 1 1 200px; /* Allows the image to scale while keeping a minimum width */
+  // margin: 10px;
+  max-width: 100%;
+  height: auto;
+}
+.centerline {
+  position: absolute;
+  z-index: 2;
+  height: auto;
+  top: 0;
+}
+.arrow-centerline {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  &-1 {
+    top: 4vw;
+    left: 49.25vw;
+  }
+  &-2 {
+    top: 6vw;
+    left: 49.25vw;
+  }
+  &-3 {
+    top: 8vw;
+    left: 49.25vw;
+  }
+}
+.garage-pos {
+  position: relative;
+  z-index: 1;
+  left: -1.5rem;
+}
+.bedroom-pos {
+  position: relative;
+  z-index: 1;
+  left: 1.5rem;
+}
+.future {
+  position: absolute;
+  z-index: 100;
+  left: 8vw;
+  top: 4vw;
+  .inside_text {
+    position: absolute;
+  }
+}
+.present {
+  position: absolute;
+  z-index: 100;
+  left: 8vw;
+  top: 7.5vw;
+  .inside_text {
+    position: absolute;
+  }
+}
+.past {
+  position: absolute;
+  z-index: 100;
+  left: 8vw;
+  top: 11vw;
+  .inside_text {
+    position: absolute;
+  }
+} 
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+ 
+.background-menu, .inside_text {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  display: block;
+}
+
+.menu-wrapper:hover .background-menu,
+.menu-wrapper:hover .inside_text {
+  transform: scale(1.1); /* Both elements will scale on hover */
+  cursor: pointer;
+}
+.char {
+  position: absolute;
+  left: 35vw;
+  z-index: 3;
+  transform: scale(0.9); /* Default scale */
+}
+.text_ai {
+  position: absolute;
+  z-index: 3;
+  left: 25vw;
+  top: 4vw;
+}
+.text_encyclopedia {
+  position: absolute;
+  z-index: 3;
+  left: 55vw;
+  top: 4vw;
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* Styles for large desktops */
+  .char {
+    top: 20vh; /* 5% of the viewport height */
+    left: 35vw; /* 10% of the viewport width */
+    transform: scale(0.9); /* Default scale */
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .char {
+    top: 6vh; /* 5% of the viewport height */
+    left: 30vw; /* 10% of the viewport width */
+    transform: scale(0.65); /* Default scale */
+  }
+  .arrow-centerline {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    &-1 {
+      top: 4vw;
+      left: 49vw;
+      // transform: scale(0.8);
+      zoom: 80%;
+    }
+    &-2 {
+      top: 6.5vw;
+      left: 49vw;
+      // transform: scale(0.8);
+      zoom: 80%;
+    }
+    &-3 {
+      top: 9vw;
+      left: 49vw;
+      // transform: scale(0.8);
+      zoom: 80%;
+    }
+  }
+  .garage-pos {
+    position: relative;
+    z-index: 1;
+  }
+  .bedroom-pos {
+    position: relative;
+    z-index: 1;
+  }
+  .text_ai {
+    position: absolute;
+    z-index: 3;
+    left: 20vw;
+    top: -2vw;
+    transform: scale(0.7);
+  }
+  .text_encyclopedia {
+    position: absolute;
+    z-index: 3;
+    left: 50vw;
+    top: 2.5vw;
+    transform: scale(0.85);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .char {
+    // top: -48vh;
+    left: 20vw;
+    transform: scale(0.38); /* Default scale */
+  }
+  .garage-pos {
+    position: relative;
+    left: 0;
+  }
+  .bedroom-pos {
+    position: relative;
+    right: 0;
+  }
+  .arrow-centerline {
+    &-1 {
+      top: 3vw;
+      left: 48.5vw;
+      transform: scale(0.4); /* Default scale */
+    }
+    &-2 {
+      top: 5vw;
+      left: 48.5vw;
+      transform: scale(0.4); /* Default scale */
+    }
+    &-3 {
+      top: 7vw;
+      left: 48.5vw;
+      transform: scale(0.4); /* Default scale */
+    }
+  }
+  .text_ai {
+    left: 15vw;
+    top: -11vw;
+    transform: scale(0.4); /* Default scale */
+  }
+  .text_encyclopedia {
+    position: absolute;
+    z-index: 3;
+    left: 48vw;
+    top: 3vw;
+    transform: scale(0.8); /* Default scale */
+  }
+  .future {
+    z-index: 3;
+    left: -5vw;
+    top: 4vw;
+    transform: scale(0.5); /* Default scale */
+  }
+  .present {
+    z-index: 3;
+    left: -5vw;
+    top: 7.5vw;
+    transform: scale(0.5); /* Default scale */
+  }
+  .past {
+    z-index: 3;
+    left: -5vw;
+    top: 11vw;
+    transform: scale(0.5); /* Default scale */
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .char {
+    //   top: 15vh;
+    left: 12vw;
+    transform: scale(0.38); /* Default scale */
+  }
+  .garage-pos {
+    position: relative;
+    left: 0;
+  }
+  .bedroom-pos {
+    position: relative;
+    right: 0;
+  }
+  .arrow-centerline {
+    &-1 {
+      top: 4vw;
+      left: 48.25vw;
+      transform: scale(0.4); /* Default scale */
+    }
+    &-2 {
+      top: 6vw;
+      left: 48.25vw;
+      transform: scale(0.4); /* Default scale */
+    }
+    &-3 {
+      top: 7.5vw;
+      left: 48.25vw;
+      transform: scale(0.4); /* Default scale */
+    }
+  }
+  .text_ai {
+    left: 10vw;
+    top: -15vw;
+    transform: scale(0.38); /* Default scale */
+  }
+  .text_encyclopedia {
+    position: absolute;
+    z-index: 3;
+    left: 42vw;
+    top: 0.5vw;
+    transform: scale(0.6); /* Default scale */
+  }
+  .future {
+    z-index: 3;
+    left: -8vw;
+    top: 3vw;
+    transform: scale(0.38); /* Default scale */
+  }
+  .present {
+    z-index: 3;
+    left: -8vw;
+    top: 6.5vw;
+    transform: scale(0.38); /* Default scale */
+  }
+  .past {
+    z-index: 3;
+    left: -8vw;
+    top: 10vw;
+    transform: scale(0.38); /* Default scale */
+  }
+}
+@media only screen and (max-width: 480px) {
+  .char {
+    //   top: 20vh;
+    left: 2vw;
+  }
+}

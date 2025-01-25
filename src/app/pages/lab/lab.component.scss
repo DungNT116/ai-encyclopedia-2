@@ -1,0 +1,97 @@
+.content {
+  background: #f0f0f0;
+  overflow: auto; /* Allow scrolling */
+  scrollbar-width: none; /* Firefox */
+}
+.text_alan {
+  position: absolute;
+  z-index: 99;
+  bottom: 5rem;
+  zoom: 80%;
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+  animation: showImage 1s forwards; // Trigger animation
+  animation-delay: 1s; // Start animation after 3 second
+}
+.table_zooming {
+  position: absolute;
+  z-index: 100;
+  right: 20rem;
+  bottom: 5rem;
+  zoom: 80%;
+}
+.notebook {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 5rem;
+  zoom: 80%;
+}
+
+.btnBack {
+  position: fixed;
+  top: 2rem;
+  z-index: 101;
+  left: 10rem;
+  zoom: 30%;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateX(50%); // Start completely to the right
+  transition: transform 0.5s ease-in-out; // Smooth transition
+}
+.btnBack:hover {
+  transform: translateX(0); // Move into view when hovered
+}
+
+.alan_text {
+  position: absolute;
+  z-index: 100;
+  left: 10rem;
+  top: 12rem;
+  zoom: 70%;
+}
+.test {
+  position: absolute;
+  z-index: 100;
+  right: 35rem;
+  top: 10rem;
+  zoom: 70%;
+}
+.btnClickTest {
+  position: absolute;
+  z-index: 100;
+  zoom: 70%;
+  right: 79rem;
+  top: 55rem;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.btnClickAlanDetail {
+  position: absolute;
+  z-index: 100;
+  zoom: 70%;
+  right: 60rem;
+  bottom: 20rem;
+  opacity: 0.6 !important;
+  cursor: pointer;
+}
+.btnClickTest {
+  position: absolute;
+  z-index: 100;
+  zoom: 60%;
+  right: 65rem;
+  top: 62rem;
+  opacity: 0.6 !important;
+  cursor: pointer;
+}
+.btnTestDetail {
+  position: absolute;
+  z-index: 100;
+  zoom: 60%;
+  left: 75rem;
+  top: 57rem;
+  opacity: 0.6 !important; 
+  cursor: pointer;
+  transition: opacity 0.5s ease-in; // Smooth transition
+  animation: showImage 1s forwards; // Trigger animation
+  animation-delay: 3s; // Start animation after 3 second  
+}

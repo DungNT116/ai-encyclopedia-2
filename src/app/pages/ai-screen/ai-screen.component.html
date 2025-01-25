@@ -1,0 +1,112 @@
+@if(currentSubScreen !== '1'
+&& currentSubScreen !== '2'
+&& currentSubScreen !== '3'
+&& currentSubScreen !== '4'
+&& currentSubScreen !== '5'
+&& currentSubScreen !== '6'
+&& currentSubScreen !== '7' ){
+<img src="/assets/images/13-ai-view/Scene14_1.gif" style=" width: 100vw;" />
+<!-- ELIZA -->
+@if(!visibleEliza){
+<img class="clickEliza  fade-in-center" src="/assets/images/general_icons/Click.gif"
+    (click)="visibleEliza = !visibleEliza" />
+}
+@if(visibleEliza){
+<img class="textEliza fade-in-center" src="/assets/images/Textbox/Eliza.png" />
+<img class="textEliza fade-in-center" src="/assets/images/Textbox/Cancel.png"
+    style="right: 2.5rem; bottom: 32.5rem;cursor: pointer;" (click)="visibleEliza = !visibleEliza" />
+<img class="textEliza  fade-in-center" src="/assets/images/general_icons/Click.gif"
+    style="right: 50rem; bottom: 10rem; opacity: 0.5 !important; cursor: pointer;" (click)="navigateEliza()" />
+}
+}
+
+@if(currentSubScreen === '1'){
+<img src="/assets/images/13-ai-view/Scene14_2.gif" style=" width: 100vw;" />
+<!-- DEEP BLUE -->
+@if(!visibleDeepBlue){
+<img class="clickEliza  fade-in-center" src="/assets/images/general_icons/Click.gif"
+    (click)="visibleDeepBlue = !visibleDeepBlue" />
+}
+
+@if(visibleDeepBlue){
+<img class="textEliza fade-in-center" src="/assets/images/Textbox/Deep Blue.png" />
+<img class="textEliza fade-in-center" src="/assets/images/Textbox/Cancel.png"
+    style="right: 2.25rem; bottom: 33rem;;cursor: pointer;" (click)="visibleDeepBlue = !visibleDeepBlue" />
+<img class="textEliza  fade-in-center" src="/assets/images/general_icons/Click.gif"
+    style="right: 50rem; bottom: 10rem; opacity: 0.5 !important; cursor: pointer;" (click)="navigateDeepBlue()" />
+}
+}
+@if(currentSubScreen === '2'){
+<!-- MOORE -->
+<img src="/assets/images/13-ai-view/Scene14_3.gif" style=" width: 100vw;" />
+@if(!visibleMoore){
+<img class="clickEliza  fade-in-center" src="/assets/images/general_icons/Click.gif"
+    (click)="visibleMoore = !visibleMoore" />
+}
+@if(visibleMoore){
+<img class="textEliza fade-in-center" src="/assets/images/Textbox/Moore.png" />
+<img class="textEliza fade-in-center" src="/assets/images/Textbox/Cancel.png"
+    style="right: 2.25rem; bottom: 33rem;cursor: pointer;" (click)="visibleMoore = !visibleMoore" />
+}
+}
+@if(currentSubScreen === '3'){
+<!-- BigData -->
+<img src="/assets/images/13-ai-view/Scene14_4.gif" style=" width: 100vw;" />
+@if(!visibleBigData){
+<img class="clickEliza  fade-in-center" src="/assets/images/general_icons/Click.gif"
+    (click)="visibleBigData = !visibleBigData" />
+}
+@if(visibleBigData){
+<img class="textEliza fade-in-center" src="/assets/images/Textbox/Bigdata.png" />
+<img class="textEliza fade-in-center" src="/assets/images/Textbox/Cancel.png"
+    style="right: 2.25rem; bottom: 33rem;cursor: pointer;" (click)="visibleBigData = !visibleBigData" />
+}
+}
+@if(currentSubScreen === '4'){
+<!-- BigData2 -->
+<img src="/assets/images/13-ai-view/Scene14_5.gif" style=" width: 100vw;" />
+@if(!visibleBigData2){
+
+<img class="clickEliza  fade-in-center" src="/assets/images/general_icons/Click.gif"
+    (click)="visibleBigData2 = !visibleBigData2" />
+}
+@if(visibleBigData2){
+<img class="textEliza fade-in-center" src="/assets/images/Textbox/Bigdata 2.png" />
+<img class="textEliza fade-in-center" src="/assets/images/Textbox/Cancel.png"
+    style="right: 2.25rem; bottom: 33rem;cursor: pointer;" (click)="visibleBigData2 = !visibleBigData2" />
+}
+
+}
+@if(currentSubScreen === '5'){
+@if(!videoFinished){
+<video class="fade-in-center" #videoPlayer width="100%" (ended)="onVideoEnd()" autoplay>
+    <source src="/assets/images/19/Scene_19.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+</video>
+}
+@if(videoFinished){<img src="/assets/images/19/Scene19_1.gif" alt="GIF" />}
+<img class="putItToTest fade-in-center" src="/assets/images/Textbox/PutItToTest.png" />
+}
+
+@if(currentSubScreen === '6'){
+<video class="fade-in-center" #videoPlayer width="100%" loop autoplay>
+    <source src="/assets/images/Scene23.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+</video>
+}
+
+@if(currentSubScreen === '7'){
+<img src="/assets/images/Community Call Out.png" style=" width: 100vw; height: 100vh;" />
+<input type="text" class="inputName" />
+<input type="text" class="inputCountry" />
+<input type="text" class="inputMail" />
+<img class="btnSubmit" (mouseover)="isHovered = true" (mouseleave)="isHovered = false"
+    [src]="isHovered ? '/assets/images/general_icons/Submit_pressed.png' : '/assets/images/general_icons/Submit.png'"
+    alt="Submit" (click)="visibleSuccess = !visibleSuccess">
+
+@if(visibleSuccess){
+<img src="/assets/images/general_icons/submit_success.png" class="formSubmit" />
+<img class="textEliza" src="/assets/images/Textbox/Cancel.png"
+    style="right: 59rem; bottom: 53rem; cursor: pointer; z-index: 100;" (click)="visibleSuccess = !visibleSuccess" />
+}
+}

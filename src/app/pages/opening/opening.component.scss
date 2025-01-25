@@ -1,0 +1,156 @@
+.background {
+  position: relative;
+  z-index: 0;
+  width: 100vw;
+  height: auto;
+  top: 0;
+}
+
+.ai-encyclo-container {
+  overflow: hidden;
+}
+.mainchar {
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  top: 0;
+}
+.text1 {
+  position: absolute;
+  z-index: 2;
+  height: auto;
+  top: 3vw;
+  left: 3vw;
+}
+.pic1b {
+  position: absolute;
+  z-index: 2;
+  height: auto;
+  top: 2vw;
+  left: 2vw;
+}
+.pic1c {
+  position: absolute;
+  z-index: 3;
+  height: auto;
+  top: 2vw;
+  left: 2vw;
+}
+.textBaghdad {
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+  opacity: 0; // Initially hidden
+  transition: opacity 0.5s ease-in; // Smooth transition
+  animation: showImage 1s forwards; // Trigger animation
+  animation-delay: 1s; // Start animation after 1 second
+
+  @keyframes showImage {
+    to {
+      opacity: 1; // Fully visible
+    }
+  }
+}
+
+.textCar {
+  position: absolute;
+  top: 39.25rem;
+  left: 50.75rem;
+  opacity: 0; // Initially hidden
+  transform: scale(0.8); // Start slightly smaller
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+  animation: showImage 1s forwards; // Trigger animation
+  animation-delay: 3s; // Start animation after 3 second 
+}
+.textPortal {
+  position: absolute;
+  top: 39rem;
+  left: 50rem;
+  opacity: 0; // Initially hidden
+  transform: scale(0.8); // Start slightly smaller
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+  animation: showImage 1s forwards; // Trigger animation
+  animation-delay: 2s; // Start animation after 3 second 
+}
+.textPopup {
+  position: absolute;
+  top: 5.5rem;
+  left: 6.5rem;
+  opacity: 0; // Initially hidden
+  transition: opacity 0.5s ease-in; // Smooth transition
+  animation: showImage 1s forwards; // Trigger animation
+  animation-delay: 3s; // Start animation after 3 second 
+}
+.textPopupGif {
+  position: absolute;
+  top: 6rem;
+  left: 7rem;
+  opacity: 0; // Initially hidden
+  transition: opacity 0.5s ease-in; // Smooth transition
+  animation: showImage 1s forwards; // Trigger animation
+  animation-delay: 3s; // Start animation after 3 second  
+  width: 47.25rem;
+  max-height: 25.25rem;
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .text1 {
+    top: 3vw;
+    left: 3vw;
+    transform: scale(0.9); /* Default scale */
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .text1 {
+    top: 5vw;
+    zoom: 60%;
+    left: -5vw;
+    img {
+      transform: scale(0.75);
+    }
+  }
+
+  .pic1b {
+    left: 12vw;
+    img {
+      transform: scale(1.2);
+      left: -4rem;
+      top: 1.5rem;
+      position: relative;
+    }
+  }
+  .pic1c {
+    left: 12vw;
+    img {
+      transform: scale(0.75);
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .text1 {
+    top: 2vw;
+    zoom: 50%;
+  }
+  .pic1b {
+    top: 4vw;
+    left: 8vw;
+    img {
+      transform: scale(0.85);
+    }
+  }
+  .pic1c {
+    top: 4vw;
+    left: 8vw;
+    img {
+      transform: scale(0.85);
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+}
+video {
+  display: block;
+  margin: 0 auto;
+}

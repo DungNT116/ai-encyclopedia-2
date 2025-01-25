@@ -1,0 +1,111 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.screen-bg {
+  position: absolute;
+  z-index: 99;
+  top: 2rem;
+  zoom: 0.9;
+}
+.ai-gif {
+  position: absolute;
+  z-index: 100;
+  top: 5rem;
+  zoom: 0.8;
+  object-fit: cover; /* Ensures the image fits without distortion */
+  clip-path: ellipse(100% 64% at 50% 65%);
+}
+.crop-img {
+  clip-path: ellipse(95% 65% at 50% 42%);
+}
+
+.left-hand {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 20rem;
+  transition: left 0.5s ease-in-out;
+}
+.right-hand {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  right: 30rem;
+}
+.textEliza {
+  position: absolute;
+  bottom: 12rem;
+  right: 5rem;
+  zoom: 70%;
+}
+.clickEliza {
+  position: absolute;
+  bottom: 40rem;
+  right: 35rem;
+  z-index: 10;
+  opacity: 0.5 !important;
+  zoom: 70%;
+  cursor: pointer;
+}
+
+.putItToTest {
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  zoom: 1.5;
+  transition: opacity 0.5s ease-in; // Smooth transition
+  animation: showImage 1s forwards; // Trigger animation
+  animation-delay: 3s; // Start animation after 3 second
+}
+
+.inputName {
+  position: absolute;
+  top: 37rem;
+  right: 20rem;
+  z-index: 100;
+  height: 4rem;
+  width: 26rem;
+  border: none;
+  outline: none;
+  font-size: 40px;
+}
+.inputCountry {
+  position: absolute;
+  top: 44rem;
+  right: 20rem;
+  z-index: 100;
+  height: 4rem;
+  width: 20rem;
+  border: none;
+  outline: none;
+  font-size: 40px;
+}
+.inputMail {
+  position: absolute;
+  top: 51rem;
+  right: 22rem;
+  z-index: 100;
+  height: 4rem;
+  width: 26rem;
+  border: none;
+  outline: none;
+  font-size: 40px;
+}
+.btnSubmit {
+  position: absolute;
+  z-index: 100;
+  bottom: 2rem;
+  right: 27.4rem;
+  cursor: pointer;
+}
+
+.formSubmit {
+  position: absolute;
+  z-index: 100;
+  top: 25rem;
+  left: 40rem;
+  border-radius: 5%;
+}

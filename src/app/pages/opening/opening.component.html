@@ -1,0 +1,58 @@
+@if(currentSubScreen !== '2'
+&& currentSubScreen !== '3'
+&& currentSubScreen !== '4'
+&& currentSubScreen !== '5'
+&& currentSubScreen !== '6' ){
+<div class="ai-encyclo-container">
+  <div class="content background fade-in-center">
+    <img [src]="mainBackground" />
+  </div>
+  <div [@fadeInFromRight] class="content mainchar">
+    <img [src]="mainChar" />
+  </div>
+  <div [@fadeInFromLeft] class="content text1">
+    <img [src]="text1" />
+  </div>
+  @if(currentSubScreen === '1'){
+  <div class="content pic1b fade-in-center">
+    <img [src]="pic1b" />
+  </div>
+  }
+</div>
+}
+
+@if(currentSubScreen === '2'){
+<img class=" fade-in-center" [src]="'/assets/images/Scene7a.gif'" style="width: 100vw;" />
+
+}
+
+@if(currentSubScreen === '3'){
+<img class=" fade-in-center"  [src]="'/assets/images/Scene8.gif'" style="width: 100vw;" />
+}
+
+
+@if(currentSubScreen === '4'){
+@if(!videoFinished){
+<video #videoPlayer width="100%" (ended)="onVideoEnd()" autoplay muted>
+  <source src="/assets/images/Scene_9a.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+}
+@if(videoFinished){<img src="/assets/images/Scene_9a_1.gif" alt="GIF" />}
+}
+
+
+@if(currentSubScreen === '5'){
+<img class=" fade-in-center" [src]="'/assets/images/Scene10a.gif'" style=" width: 100vw;" />
+}
+@if(currentSubScreen === '6'){
+<img class=" fade-in-center" [src]="Classical_Age" style=" width: 100vw;" />
+
+<div [@fadeInFromRight]>
+  <img class="textBaghdad" [src]="Baghdad" />
+  <img class="textPortal" [src]="Portal" />
+  <img class="textCar" [src]="Car" />
+  <img class="textPopup" [src]="Popup" />
+  <img class="textPopupGif" [src]="PopupGif" />
+</div> 
+} 

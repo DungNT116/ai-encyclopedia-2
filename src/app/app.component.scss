@@ -1,0 +1,75 @@
+.full-screen-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+  background: #ffffff;
+  scrollbar-width: none; /* Firefox */
+}
+.scrollable-content::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+}
+.portrait-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff; /* Dark background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000; /* White text */
+  z-index: 1000; /* Make sure it appears above everything */
+}
+
+.portrait-message {
+  text-align: center;
+}
+
+.rotate-icon {
+  width: 80px; /* Adjust the icon size */
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.app-content {
+  width: 100vw;
+  height: 100vh;
+}
+
+.scroll-gif {
+  position: absolute;
+  bottom: 2rem;
+  z-index: 999;
+  right: 5rem;
+  zoom: 70%;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .scroll-gif {
+    zoom: 40%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .scroll-gif {
+    zoom: 40%;
+  }
+}
+@media only screen and (max-width: 480px) {
+}
+

@@ -1,0 +1,272 @@
+.general-set-background {
+  width: 100vw;
+  position: relative;
+}
+/* page.component.css */
+.content {
+  background: #f0f0f0;
+  overflow: auto; /* Allow scrolling */
+  scrollbar-width: none; /* Firefox */
+}
+.content .text_hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0s 0.5s; /* Delay visibility change */
+  transform: translateY(20px); /* Start below */
+}
+
+.btnBack {
+  position: fixed;
+  top: 2rem;
+  z-index: 101;
+  left: 10rem;
+  zoom: 30%;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateX(50%); // Start completely to the right
+  transition: transform 0.5s ease-in-out; // Smooth transition
+}
+.btnBack:hover {
+  transform: translateX(0); // Move into view when hovered
+}
+.visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in !important;
+}
+.scrollable-content::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+}
+
+.Scaffold {
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  top: 295rem;
+}
+.text1 {
+  position: absolute;
+  z-index: 100;
+  left: 2rem;
+  top: 15rem;
+  zoom: 80%;
+}
+
+.text2 {
+  position: absolute;
+  z-index: 100;
+  left: 12rem;
+  top: 115rem;
+  zoom: 80%;
+}
+
+.text3 {
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  top: 145rem;
+  zoom: 80%;
+}
+
+.text4 {
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  top: 165rem;
+  zoom: 80%;
+}
+
+.text5 {
+  position: absolute;
+  z-index: 100;
+  right: 10rem;
+  top: 220rem;
+  zoom: 80%;
+}
+.text6 {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 225rem;
+  zoom: 80%;
+}
+
+.text7 {
+  position: absolute;
+  z-index: 100;
+  left: 20rem;
+  top: 270rem;
+  zoom: 80%;
+}
+
+.text8 {
+  position: absolute;
+  z-index: 100;
+  left: 20rem;
+  top: 342rem;
+  zoom: 80%;
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in !important;
+}
+.btnText8 {
+  position: absolute;
+  z-index: 100;
+  right: 34rem;
+  top: 360rem;
+  zoom: 80%;
+  cursor: pointer;
+  opacity: 0.3;
+}
+.btnCancelText8 {
+  position: absolute;
+  z-index: 100;
+  right: 50rem;
+  top: 340rem;
+  zoom: 80%;
+  cursor: pointer;
+}
+.text9 {
+  position: absolute;
+  z-index: 100;
+  left: 45rem;
+  top: 365rem;
+  zoom: 80%;
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in !important;
+}
+.btnText9 {
+  position: absolute;
+  z-index: 100; 
+  right: 11rem;
+  top: 385rem;
+  zoom: 80%;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.btnCancelText9 {
+  position: absolute;
+  z-index: 100;
+  right: 25rem;
+  top: 362rem;
+  zoom: 80%;
+  cursor: pointer;
+}
+.Descartes {
+  position: absolute;
+  z-index: 99;
+  right: 23rem;
+  top: 274rem;
+}
+
+.Leibniz {
+  position: absolute;
+  z-index: 99;
+  right: 5rem;
+  top: 294rem;
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  .text1 {
+  }
+  .text2 {
+  }
+  .text3 {
+  }
+  .text4 {
+  }
+  .text5 {
+  }
+  .text6 {
+  }
+  .text7 {
+  }
+  .text8 {
+  }
+  .text9 {
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .text1 {
+  }
+  .text2 {
+  }
+  .text3 {
+  }
+  .text4 {
+  }
+  .text5 {
+  }
+  .text6 {
+  }
+  .text7 {
+  }
+  .text8 {
+  }
+  .text9 {
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .text1 {
+    zoom: 40%;
+  }
+  .text2 {
+    top: 110rem;
+    zoom: 40%;
+  }
+  .text3 {
+    top: 140rem;
+    zoom: 40%;
+  }
+  .text4 {
+    zoom: 40%;
+  }
+  .text5 {
+    zoom: 40%;
+  }
+  .text6 {
+    zoom: 40%;
+  }
+  .text7 {
+    zoom: 40%;
+  }
+  .text8 {
+    zoom: 39%;
+  }
+  .text9 {
+    zoom: 39%;
+  }
+  .btnText8 {
+    zoom: 39%;
+  }
+  .btnCancelText8 {
+    zoom: 39%;
+  }
+  .btnText9 {
+    zoom: 39%;
+  }
+  .btnCancelText9 {
+    zoom: 39%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .text1 {
+  }
+  .text2 {
+  }
+  .text3 {
+  }
+  .text4 {
+  }
+  .text5 {
+  }
+  .text6 {
+  }
+  .text7 {
+  }
+  .text8 {
+  }
+  .text9 {
+  }
+}
+@media only screen and (max-width: 480px) {
+}

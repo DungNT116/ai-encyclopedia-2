@@ -1,0 +1,33 @@
+<img class="fade-in-center" src="/assets/images/Scene13.gif" style=" width: 100vw;" />
+<div class="content main-section">
+    <img class="text_alan fade-in-center" src="/assets/images/12-lab/text_alan_turing.png" />
+    @if(currentSubScreen === '1' || currentSubScreen === '2'){
+    <img class="table_zooming fade-in-center" src="/assets/images/12-lab/table_zoom_in.gif" />
+    @if(visibleDetailAlan && currentSubScreen === '1'){
+    <img class="alan_text fade-in-center" src="/assets/images/Textbox/Alan.png" />
+    <img class="alan_text fade-in-center" src="/assets/images/Textbox/Cancel.png"
+        style="left: 56rem; top: 10rem;cursor: pointer;" (click)="visibleDetailAlan = !visibleDetailAlan" />
+    <img class="btnClickTest fade-in-center" src="/assets/images/general_icons/Click.gif" (click)="goToSublab2()" />
+    }
+    @if(!visibleDetailAlan && currentSubScreen === '1'){
+    <img class="btnClickAlanDetail fade-in-center" src="/assets/images/general_icons/Click.gif"
+        (click)="visibleDetailAlan = !visibleDetailAlan" />
+    }
+    }
+    @if(currentSubScreen === '2'){
+    <app-image-sequence-player class="notebook fade-in-center" [imageCount]="126"
+        [imgSource]="'/assets/images/12-lab/Notebook/Notebook'" [loopRangeStart]="30"
+        [loopRangeEnd]="126"></app-image-sequence-player>
+    @if(visibleTuringTest){
+    <img class="test fade-in-center" src="/assets/images/Textbox/Test.png" />
+    <img class="test fade-in-center" src="/assets/images/Textbox/Cancel.png"
+        style="right: 32.5rem;top: 8.5rem;cursor: pointer;" (click)="visibleTuringTest = !visibleTuringTest" />
+    <img class="test fade-in-center" src="/assets/images/general_icons/Click.gif"
+        style="right: 78rem; top: 55rem;;cursor: pointer; opacity: 0.6 !important;" (click)="navigateTuring()"/>
+    }
+    @if(!visibleTuringTest && currentSubScreen === '2'){
+    <img class="btnTestDetail fade-in-center" src="/assets/images/general_icons/Click.gif"
+        (click)="visibleTuringTest = !visibleTuringTest" />
+    }
+    }
+</div>

@@ -1,0 +1,27 @@
+.image-sequence-player {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+  }
+  
+  .smooth-transition {
+    opacity: 0;
+    animation: fadeInOut 0.3s forwards;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

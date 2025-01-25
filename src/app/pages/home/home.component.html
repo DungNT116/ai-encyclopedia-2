@@ -1,0 +1,58 @@
+
+<div class="content future menu-wrapper">
+  <img class="background-menu" [@fadeInFromLeft] [src]="menu_box1" />
+  <img class="inside_text" [@fadeInFromLeft] [src]="future" />
+</div>
+<div class="content present menu-wrapper">
+  <img class="background-menu" [@fadeInPresentFromLeft] [src]="menu_box2" />
+  <img class="inside_text" [@fadeInPresentFromLeft] [src]="present" />
+</div>
+<div class="content past menu-wrapper">
+  <img class="background-menu" [@fadeInPastFromLeft] [src]="menu_box3" />
+  <img class="inside_text" [@fadeInPastFromLeft] [src]="past" />
+</div>
+<div class="ai-encyclo-container ">
+  <!-- LEFT -->
+  <div class="content garage-pos">
+    <img [@fadeInFromLeft] [src]="garage" />
+  </div>
+  <div class="content text_ai">
+    <img [@fadeInFromTop] [src]="text_ai" />
+  </div>
+  <!-- END LEFT -->
+  <div class="content centerline">
+    <img [src]="centerline" />
+    <div>
+      <img
+        [@fadeInFromTop]
+        class="content arrow-centerline"
+        [src]="arrowCenterLine[0]"
+        [class]="'arrow-centerline-1'"
+      />
+      <img
+        [@fadeInFromTop]
+        class="content arrow-centerline"
+        [src]="arrowCenterLine[1]"
+        [class]="'arrow-centerline-2'"
+      />
+      <img
+        [@fadeInFromTop]
+        class="content arrow-centerline"
+        [src]="arrowCenterLine[2]"
+        [class]="'arrow-centerline-3'"
+      />
+    </div>
+  </div>
+  <!-- RIGHT -->
+  <div class="content text_encyclopedia">
+    <img [@fadeInFromTop] [src]="text_encyclopedia" />
+  </div>
+  <div class="content char">
+    <img [@fadeInCharFromRight] [src]="char" />
+  </div>
+  <div class="content bedroom-pos">
+    <img [@fadeInFromRight] [src]="bedroom" />
+  </div>
+
+  <!-- END RIGHT -->
+</div>

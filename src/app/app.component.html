@@ -1,0 +1,28 @@
+<!-- Portrait mode cover -->
+@if(isPortraitMode){
+<div class="portrait-cover">
+  <!-- <div class="portrait-message"> -->
+    <img src="/assets/images/general_icons/Screen-rotate.gif" alt="Rotate Icon"/>
+    <!-- <h2>Please rotate your device</h2>
+    <p>This app is best viewed in landscape mode.</p>
+  </div> -->
+</div>
+}
+
+<!-- App content -->
+@if(!isPortraitMode){
+<app-header></app-header> 
+<div class="full-screen-container">
+  <!-- <nav class="navigation">
+      <a routerLink="/" fragment="home" class="nav-link">Home</a>
+      <a routerLink="/about" fragment="about" class="nav-link">About</a>
+      <a routerLink="/contact" fragment="contact" class="nav-link">Contact</a>
+    </nav> -->
+  <!-- <app-scroll-animation></app-scroll-animation> -->
+
+  <div class="page-container">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+</div>
+<img class="scroll-gif" src="/assets/images/general_icons/Scroll.gif" alt="Loading GIF" (click)="goToNextPage()" />
+}

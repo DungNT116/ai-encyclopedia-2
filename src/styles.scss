@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+}
+.ai-encyclo-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  img {
+    flex: 1 1 200px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@keyframes showImage {
+  to {
+    opacity: 1; // Fully visible
+  }
+}
+/* Animation keyframes for fade-in from the center */
+@keyframes fadeInCenter {
+  0% {
+    opacity: 0;
+    transform: scale(1); /* Starts small from the center */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Ends at full size */
+  }
+}
+
+/* Apply the animation to your element */
+.fade-in-center {
+  opacity: 0; /* Initially hidden */
+  animation: fadeInCenter 1s ease-in-out forwards;
+  transform-origin: center;
+}
+
+
+/* Apply the animation to your element */
+.fade-in-center-smooth {
+  opacity: 0; /* Initially hidden */
+  animation: fadeInCenter 0.3s ease-in-out forwards;
+  transform-origin: center;
+}

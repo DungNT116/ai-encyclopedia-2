@@ -1,0 +1,51 @@
+.header {
+  height: 3rem;
+  display: grid;
+  grid-template-columns: auto 4rem 4rem 4rem;
+  vertical-align: center;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  top: 1rem;
+  left: 0;
+  right: 1rem;
+}
+.icon-size {
+  width: 2.5rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.volume-icon {
+  cursor: pointer; /* Make the icon look clickable */
+}
+.about-icon {
+  cursor: pointer; /* Show that the icon is interactive */
+  transition: 0.3s; /* Smooth transition when changing images */
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    grid-template-columns: auto 2.5rem 2.5rem 2.5rem;
+    top: 0.25rem;
+  }
+  .menu-icon,
+  .volume-icon,
+  .about-icon {
+    zoom: 70%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .header {
+    grid-template-columns: auto 2.5rem 2.5rem 2.5rem;
+    top: 0.25rem;
+  }
+  .menu-icon,
+  .volume-icon,
+  .about-icon {
+    zoom: 70%;
+  }
+}
+@media only screen and (max-width: 480px) {
+}

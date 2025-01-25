@@ -1,0 +1,21 @@
+<div class="header">
+    <br>
+    <div>
+        <img class="menu-icon icon-size" [src]="menu" (click)="goHome()"/>
+    </div>
+    <div>
+        <img [src]="getCurrentVolumeIcon()"   
+            (click)="nextVolume()"          
+            alt="Volume Control"
+            class="volume-icon icon-size" />
+    </div>
+    <div>
+        <img
+        [src]="currentAbout"             
+        (mouseenter)="onMouseEnter()"     
+        (mouseleave)="onMouseLeave()"     
+        alt="About Icon"
+        class="about-icon icon-size"
+      />
+    </div>
+</div>
