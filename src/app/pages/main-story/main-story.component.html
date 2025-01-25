@@ -23,7 +23,9 @@
         (click)="showDescartes()" />}
     @if(visibleDescartes){
     <img class="Descartes  fade-in-center" src="/assets/images/11-main/René_Descartes.png" />
-    <img class="btnText8" src="/assets/images/general_icons/Click.gif" (click)="showDetailDescartes()" />
+    @if(!visibleDetailDescartes){ 
+        <img class="btnText8" src="/assets/images/general_icons/Click.gif" (click)="showDetailDescartes()" />
+    }
     }
     @if(visibleDetailDescartes){
     <img class="text8 fade-in-center" src="/assets/images/11-main/text_8.png" />
@@ -34,7 +36,10 @@
     @if(!visibleLeibniz){<img class="btnText9" src="/assets/images/general_icons/Click.gif" (click)="showLeibniz()" />}
     @if(visibleLeibniz){
     <img class="Leibniz fade-in-center" src="/assets/images/11-main/Gottfried_Leibniz.png" />
-    <img class="btnText9" src="/assets/images/general_icons/Click.gif" (click)="showDetailLeibniz()" />
+    @if(!visibleDetailLeibniz){ 
+        <img class="btnText9" src="/assets/images/general_icons/Click.gif" (click)="showDetailLeibniz()" />
+     }
+
     }
 
     @if(visibleDetailLeibniz){

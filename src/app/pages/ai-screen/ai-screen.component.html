@@ -51,7 +51,11 @@
 }
 @if(currentSubScreen === '3'){
 <!-- BigData -->
-<img src="/assets/images/13-ai-view/Scene14_4.gif" style=" width: 100vw;" />
+<!-- <img src="/assets/images/13-ai-view/Scene14_4.gif" style=" width: 100vw;" /> -->
+<video #videoPlayer width="100%" autoplay>
+    <source src="/assets/images/13-ai-view/Scene14_4.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 @if(!visibleBigData){
 <img class="clickEliza  fade-in-center" src="/assets/images/general_icons/Click.gif"
     (click)="visibleBigData = !visibleBigData" />
