@@ -1,6 +1,6 @@
 <!-- <img src="/assets/images/11-main/BG_final.gif" class="general-set-background" /> -->
 <img src="https://ai-encyclopedia.b-cdn.net/Scene12_1.gif" class="general-set-background" />
-<img src="/assets/images/general_icons/arrow-back.png" class="btnBack" (click)="goBackToPrevious()" />
+<img src="https://ai-encyclopedia.b-cdn.net/arrow-back.png" class="btnBack" (click)="goBackToPrevious()" />
 
 <img class="Scaffold" src="/assets/images/11-main/Scaffold.png" />
 <div class="content main-section">
@@ -19,12 +19,12 @@
         [ngClass]="{ 'visible': isImageVisible(7) }" />
 
     <!-- Descartes -->
-    @if(!visibleDescartes){<img class="btnText8" src="/assets/images/general_icons/Click.gif"
+    @if(!visibleDescartes){<img class="btnText8" src="https://ai-encyclopedia.b-cdn.net/Click.gif"
         (click)="showDescartes()" />}
     @if(visibleDescartes){
     <img class="Descartes  fade-in-center" src="/assets/images/11-main/René_Descartes.png" />
     @if(!visibleDetailDescartes){ 
-        <img class="btnText8" src="/assets/images/general_icons/Click.gif" (click)="showDetailDescartes()" />
+        <img class="btnText8" src="https://ai-encyclopedia.b-cdn.net/Click.gif" (click)="showDetailDescartes()" />
     }
     }
     @if(visibleDetailDescartes){
@@ -33,11 +33,11 @@
         (click)="hideDetailDescartes()" />
     }
     <!--  Leibniz -->
-    @if(!visibleLeibniz){<img class="btnText9" src="/assets/images/general_icons/Click.gif" (click)="showLeibniz()" />}
+    @if(!visibleLeibniz){<img class="btnText9" src="https://ai-encyclopedia.b-cdn.net/Click.gif" (click)="showLeibniz()" />}
     @if(visibleLeibniz){
     <img class="Leibniz fade-in-center" src="/assets/images/11-main/Gottfried_Leibniz.png" />
     @if(!visibleDetailLeibniz){ 
-        <img class="btnText9" src="/assets/images/general_icons/Click.gif" (click)="showDetailLeibniz()" />
+        <img class="btnText9" src="https://ai-encyclopedia.b-cdn.net/Click.gif" (click)="showDetailLeibniz()" />
      }
 
     }
