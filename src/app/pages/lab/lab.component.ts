@@ -12,6 +12,7 @@ import { ImageSequencePlayerComponent } from "../image-sequence-player/image-seq
 export class LabComponent {
   currentSubScreen: string | null = "";
 
+  visibleNotebook = false;
   visibleDetailAlan = false;
   visibleTuringTest = false;
   
@@ -28,7 +29,14 @@ export class LabComponent {
   }
   // Method to scroll to the correct subsection based on the 'subScreen' parameter
   scrollToSubScreen(): void {
+    this.visibleNotebook = false;
     if (this.currentSubScreen) {
+      console.log("currentSubScreen :: ", this.currentSubScreen)
+      if(this.currentSubScreen === '2'){
+        setTimeout(() => {
+          this.visibleNotebook = true;
+        },500)
+      }
       const element = document.getElementById(this.currentSubScreen); // Assuming IDs match subScreen values
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
