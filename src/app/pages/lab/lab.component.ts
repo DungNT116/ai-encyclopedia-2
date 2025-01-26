@@ -35,7 +35,7 @@ export class LabComponent {
       if(this.currentSubScreen === '2'){
         setTimeout(() => {
           this.visibleNotebook = true;
-        },500)
+        },800)
       }
       const element = document.getElementById(this.currentSubScreen); // Assuming IDs match subScreen values
       if (element) {
