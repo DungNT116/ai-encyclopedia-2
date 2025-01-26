@@ -22,28 +22,28 @@
 }
 
 @if(currentSubScreen === '2'){
-<img class=" fade-in-center" [src]="'/assets/images/Scene7a.gif'" style="width: 100vw;" />
+<img class=" fade-in-center" [src]="'https://ai-encyclopedia.b-cdn.net/Scene7a.gif'" style="width: 100vw;" />
 
 }
 
 @if(currentSubScreen === '3'){
-<img class=" fade-in-center"  [src]="'/assets/images/Scene8.gif'" style="width: 100vw;" />
+<img class=" fade-in-center" [src]="'https://ai-encyclopedia.b-cdn.net/Scene8.gif'" style="width: 100vw;" />
 }
 
 
 @if(currentSubScreen === '4'){
 @if(!videoFinished){
-<video #videoPlayer width="100%" (ended)="onVideoEnd()" autoplay muted>
+<video #videoPlayer width="100%" (ended)="onVideoEnd()" autoplay muted preload="auto">
   <source src="/assets/images/Scene_9a.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 }
-@if(videoFinished){<img src="/assets/images/Scene_9a_1.gif" alt="GIF" />}
+@if(videoFinished){<img src="https://ai-encyclopedia.b-cdn.net/Scene_9a_1.gif" alt="GIF" />}
 }
 
 
 @if(currentSubScreen === '5'){
-<img class=" fade-in-center" [src]="'/assets/images/Scene10a.gif'" style=" width: 100vw;" />
+<img class=" fade-in-center" [src]="'https://ai-encyclopedia.b-cdn.net/Scene10a.gif'" style=" width: 100vw;" />
 }
 @if(currentSubScreen === '6'){
 <img class=" fade-in-center" [src]="Classical_Age" style=" width: 100vw;" />
@@ -54,5 +54,5 @@
   <img class="textCar" [src]="Car" />
   <img class="textPopup" [src]="Popup" />
   <img class="textPopupGif" [src]="PopupGif" />
-</div> 
-} 
+</div>
+}

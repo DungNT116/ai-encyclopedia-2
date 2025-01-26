@@ -30,8 +30,7 @@ export class LabComponent {
   // Method to scroll to the correct subsection based on the 'subScreen' parameter
   scrollToSubScreen(): void {
     this.visibleNotebook = false;
-    if (this.currentSubScreen) {
-      console.log("currentSubScreen :: ", this.currentSubScreen)
+    if (this.currentSubScreen) { 
       if(this.currentSubScreen === '2'){
         setTimeout(() => {
           this.visibleNotebook = true;

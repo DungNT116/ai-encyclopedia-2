@@ -38,7 +38,7 @@
 }
 @if(currentSubScreen === '2'){
 <!-- MOORE -->
-<img src="/assets/images/13-ai-view/Scene14_3.gif" style=" width: 100vw;" />
+<img src="https://ai-encyclopedia.b-cdn.net/Scene14_3.gif" style=" width: 100vw;" />
 @if(!visibleMoore){
 <img class="clickEliza  fade-in-center" src="/assets/images/general_icons/Click.gif"
     (click)="visibleMoore = !visibleMoore" />
@@ -52,7 +52,7 @@
 @if(currentSubScreen === '3'){
 <!-- BigData -->
 <!-- <img src="/assets/images/13-ai-view/Scene14_4.gif" style=" width: 100vw;" /> -->
-<video #videoPlayer width="100%" autoplay>
+<video #videoPlayer width="100%" autoplay  preload="auto">
     <source src="/assets/images/13-ai-view/Scene14_4.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
@@ -68,7 +68,7 @@
 }
 @if(currentSubScreen === '4'){
 <!-- BigData2 -->
-<img src="/assets/images/13-ai-view/Scene14_5.gif" style=" width: 100vw;" />
+<img src="https://ai-encyclopedia.b-cdn.net/Scene14_5.gif" style=" width: 100vw;" />
 @if(!visibleBigData2){
 
 <img class="clickEliza  fade-in-center" src="/assets/images/general_icons/Click.gif"
@@ -83,17 +83,17 @@
 }
 @if(currentSubScreen === '5'){
 @if(!videoFinished){
-<video class="fade-in-center" #videoPlayer width="100%" (ended)="onVideoEnd()" autoplay>
+<video class="fade-in-center" #videoPlayer width="100%" (ended)="onVideoEnd()" autoplay  preload="auto">
     <source src="/assets/images/19/Scene_19.mp4" type="video/mp4" />
     Your browser does not support the video tag.
 </video>
 }
-@if(videoFinished){<img src="/assets/images/19/Scene19_1.gif" alt="GIF" />}
+@if(videoFinished){<img src="https://ai-encyclopedia.b-cdn.net/Scene19_1.gif" alt="GIF" />}
 <img class="putItToTest fade-in-center" src="/assets/images/Textbox/PutItToTest.png" />
 }
 
 @if(currentSubScreen === '6'){
-<video class="fade-in-center" #videoPlayer width="100%" loop autoplay>
+<video class="fade-in-center" #videoPlayer width="100%" loop autoplay  preload="auto">
     <source src="/assets/images/Scene23.mp4" type="video/mp4" />
     Your browser does not support the video tag.
 </video>
