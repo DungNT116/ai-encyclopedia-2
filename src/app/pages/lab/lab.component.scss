@@ -93,7 +93,50 @@
 
 @media only screen and (min-width: 1441px) and (max-width: 1920px) {}
 
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+
+  .text_alan {
+    transform: scale(0.8);
+    left: -7rem;
+    bottom: 13rem;
+  }
+
+  .table_zooming {
+    zoom: 60%;
+    bottom: 20rem;
+  }
+
+  .btnClickAlanDetail {
+    zoom: 60%;
+    right: 48rem;
+    bottom: 31rem;
+  }
+
+  .alan_text {
+    zoom: 60%;
+  }
+
+  .btnClickTest {
+    zoom: 60%;
+    right: 47rem;
+    top: 41rem;
+  }
+
+  .notebook {
+    zoom: 60%;
+
+  }
+
+  .btnTestDetail {
+    zoom: 60%;
+    left: 55rem;
+    top: 40rem;
+  }
+
+  .test {
+    zoom: 60%;
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {}
 
@@ -135,8 +178,9 @@
     left: 55rem;
     top: 40rem;
   }
-  .test{
-    zoom: 30%; 
+
+  .test {
+    zoom: 30%;
   }
 }
 

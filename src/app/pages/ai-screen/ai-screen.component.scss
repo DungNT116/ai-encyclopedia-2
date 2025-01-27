@@ -130,7 +130,57 @@
 
 @media only screen and (min-width: 1441px) and (max-width: 1920px) {}
 
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .clickEliza {
+    zoom: 60%;
+    bottom: 44rem;
+    right: 33rem;
+  }
+
+  .textEliza {
+    zoom: 60%;
+
+  }
+
+  .putItToTest {
+    zoom: 1
+  }
+
+
+  .inputName {
+    zoom: 60%;
+    top: 53rem;
+    right: 26rem;
+  }
+
+  .inputCountry {
+    zoom: 60%;
+    top: 63rem;
+    right: 28rem;
+  }
+
+  .inputMail {
+    zoom: 60%;
+    top: 72rem;
+    right: 29rem;
+  }
+
+  .formSubmit {
+    zoom: 80%;
+    top: 25rem;
+  }
+
+  .formSubmitSuccess {
+    right: 47rem;
+    bottom: 53rem;
+  }
+
+  .btnSubmit {
+    zoom: 80%;
+    right: 25.1rem;
+    bottom: 2.5rem;
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {}
 

@@ -105,10 +105,53 @@
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   .text1 {
-    top: 3vw;
-    left: 3vw;
-    transform: scale(0.9);
-    /* Default scale */
+    top: 5vw;
+    zoom: 80%;
+  }
+
+  .pic1b {
+    width: 100vw;
+    top: 0;
+    left: 0;
+  }
+
+  .pic1c {
+    top: 4vw;
+    left: 8vw;
+
+    img {
+      transform: scale(0.85);
+    }
+  }
+
+  .textBaghdad {
+    transform: scale(0.8);
+    top: 3rem;
+    right: 0rem;
+  }
+
+  .textPopup {
+    transform: scale(0.8);
+    top: -0.5rem;
+    left: -1.5rem;
+  }
+
+  .textPopupGif {
+    transform: scale(0.8);
+    top: 0.5rem;
+    left: -1rem;
+  }
+
+  .textPortal {
+    transform: scale(0.8);
+    top: 29rem;
+    left: 38rem;
+  }
+
+  .textCar {
+    transform: scale(0.8);
+    top: 29.5rem;
+    left: 38.5rem;
   }
 }
 

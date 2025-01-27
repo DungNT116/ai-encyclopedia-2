@@ -203,23 +203,92 @@
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-  .text1 {}
+  .text1 {
+    zoom: 60%;
+  }
 
-  .text2 {}
+  .text2 {
+    zoom: 60%;
+  }
 
-  .text3 {}
+  .text3 {
+    zoom: 60%;
+  }
 
-  .text4 {}
+  .text4 {
+    zoom: 60%;
+  }
 
-  .text5 {}
+  .text5 {
+    zoom: 60%;
+  }
 
-  .text6 {}
+  .text6 {
+    zoom: 60%;
+  }
 
-  .text7 {}
+  .text7 {
+    zoom: 60%;
+  }
 
-  .text8 {}
+  .text8 {
+    zoom: 60%;
+    left: 24rem;
+    top: 348rem;
+  }
 
-  .text9 {}
+  .text9 {
+    zoom: 60%;
+    left: 46rem;
+    top: 372rem;
+  }
+
+  .btnText8 {
+    zoom: 60%;
+    top: 368rem;
+    right: 32rem;
+  }
+
+  .btnCancelText8 {
+    zoom: 60%;
+    right: 49rem;
+    top: 346rem;
+  }
+
+  .btnText9 {
+    zoom: 60%;
+    top: 390rem;
+  }
+
+  .btnCancelText9 {
+    zoom: 60%;
+    right: 26rem;
+    top: 369rem;
+  }
+
+  .btnBack {
+    transform: scale(0.5);
+    top: 0rem;
+    left: 2rem;
+  }
+
+  .Scaffold {
+    top: 216rem;
+    transform: scale(0.8);
+    right: -8rem;
+  }
+
+
+
+  .Descartes {
+    zoom: 70%;
+    top: 295rem;
+  }
+
+  .Leibniz {
+    zoom: 70%;
+    top: 315rem;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
