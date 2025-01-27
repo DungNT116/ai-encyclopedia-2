@@ -50,11 +50,11 @@
 }
 }
 @if(currentSubScreen === '3'){
-<!-- BigData --> 
-<video #videoPlayer width="100%" autoplay  preload="auto">
+<!-- BigData -->
+<video #videoPlayer width="100%" autoplay preload="auto">
     <source src="https://ai-encyclopedia.b-cdn.net/Scene14_4.mp4" type="video/mp4" />
     Your browser does not support the video tag.
-  </video>
+</video>
 @if(!visibleBigData){
 <img class="clickEliza  fade-in-center" src="https://ai-encyclopedia.b-cdn.net/Click.gif"
     (click)="visibleBigData = !visibleBigData" />
@@ -82,7 +82,7 @@
 }
 @if(currentSubScreen === '5'){
 @if(!videoFinished){
-<video class="fade-in-center" #videoPlayer width="100%" (ended)="onVideoEnd()" autoplay  preload="auto">
+<video class="fade-in-center" #videoPlayer width="100%" (ended)="onVideoEnd()" autoplay preload="auto">
     <source src="https://ai-encyclopedia.b-cdn.net/Scene_19.mp4" type="video/mp4" />
     Your browser does not support the video tag.
 </video>
@@ -92,7 +92,7 @@
 }
 
 @if(currentSubScreen === '6'){
-<video class="fade-in-center" #videoPlayer width="100%" loop autoplay  preload="auto">
+<video class="fade-in-center" #videoPlayer width="100%" loop autoplay preload="auto">
     <source src="https://ai-encyclopedia.b-cdn.net/Scene23.mp4" type="video/mp4" />
     Your browser does not support the video tag.
 </video>
@@ -109,7 +109,7 @@
 
 @if(visibleSuccess){
 <img src="/assets/images/general_icons/submit_success.png" class="formSubmit" />
-<img class="textEliza" src="https://ai-encyclopedia.b-cdn.net/Cancel.png"
-    style="right: 59rem; bottom: 53rem; cursor: pointer; z-index: 100;" (click)="visibleSuccess = !visibleSuccess" />
+<img class="textEliza formSubmitSuccess" src="https://ai-encyclopedia.b-cdn.net/Cancel.png"
+    (click)="visibleSuccess = !visibleSuccess" />
 }
 }

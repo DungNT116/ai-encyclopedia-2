@@ -27,7 +27,7 @@ export class MainStoryComponent {
   visibleDetailDescartes = false;
   visibleDetailLeibniz = false;
   constructor(private router: Router) {}
-  @HostListener("document:mousewheel", ["$event"])
+  @HostListener("document:wheel", ["$event"])
   onDocumentMousewheelEvent(event: Event) {
     this.updateImageVisibility();
   }
@@ -35,7 +35,7 @@ export class MainStoryComponent {
   updateImageVisibility(): void {
     const images = document.querySelectorAll(".content img");
     const windowHeight = window.innerHeight;
-
+    console.log(windowHeight)
     images.forEach((image, index) => {
       const rect = image.getBoundingClientRect();
       switch (index) {

@@ -66,8 +66,7 @@ export class OpeningComponent {
   }
   // Method to scroll to the correct subsection based on the 'subScreen' parameter
   scrollToSubScreen(): void {
-    if (this.currentSubScreen) {
-      console.log(this.currentSubScreen)
+    if (this.currentSubScreen) { 
       const element = document.getElementById(this.currentSubScreen); // Assuming IDs match subScreen values
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });

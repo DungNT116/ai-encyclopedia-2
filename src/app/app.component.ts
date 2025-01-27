@@ -74,7 +74,7 @@ export class AppComponent implements OnChanges {
     this.checkOrientation();
   }
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes);
+    // console.log(changes);
   }
   ngOnInit() {
     this.currentUrl = this.router.url;  

@@ -9,12 +9,14 @@
 .ai-encyclo-container {
   overflow: hidden;
 }
+
 .mainchar {
   position: absolute;
   z-index: 1;
   height: auto;
   top: 0;
 }
+
 .text1 {
   position: absolute;
   z-index: 2;
@@ -22,6 +24,7 @@
   top: 3vw;
   left: 3vw;
 }
+
 .pic1b {
   position: absolute;
   z-index: 2;
@@ -29,6 +32,7 @@
   top: 2vw;
   left: 2vw;
 }
+
 .pic1c {
   position: absolute;
   z-index: 3;
@@ -36,6 +40,7 @@
   top: 2vw;
   left: 2vw;
 }
+
 .textBaghdad {
   position: absolute;
   top: 5rem;
@@ -62,6 +67,7 @@
   animation: showImage 1s forwards; // Trigger animation
   animation-delay: 3s; // Start animation after 3 second 
 }
+
 .textPortal {
   position: absolute;
   top: 39rem;
@@ -72,6 +78,7 @@
   animation: showImage 1s forwards; // Trigger animation
   animation-delay: 2s; // Start animation after 3 second 
 }
+
 .textPopup {
   position: absolute;
   top: 5.5rem;
@@ -81,6 +88,7 @@
   animation: showImage 1s forwards; // Trigger animation
   animation-delay: 3s; // Start animation after 3 second 
 }
+
 .textPopupGif {
   position: absolute;
   top: 6rem;
@@ -92,20 +100,24 @@
   width: 47.25rem;
   max-height: 25.25rem;
 }
-@media only screen and (min-width: 1441px) and (max-width: 1920px) {
-}
+
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {}
+
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   .text1 {
     top: 3vw;
     left: 3vw;
-    transform: scale(0.9); /* Default scale */
+    transform: scale(0.9);
+    /* Default scale */
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .text1 {
     top: 5vw;
     zoom: 60%;
     left: -5vw;
+
     img {
       transform: scale(0.75);
     }
@@ -113,6 +125,7 @@
 
   .pic1b {
     left: 12vw;
+
     img {
       transform: scale(1.2);
       left: -4rem;
@@ -120,8 +133,10 @@
       position: relative;
     }
   }
+
   .pic1c {
     left: 12vw;
+
     img {
       transform: scale(0.75);
     }
@@ -133,23 +148,58 @@
     top: 2vw;
     zoom: 50%;
   }
+
   .pic1b {
     top: 4vw;
     left: 8vw;
+
     img {
       transform: scale(0.85);
     }
   }
+
   .pic1c {
     top: 4vw;
     left: 8vw;
+
     img {
       transform: scale(0.85);
     }
   }
+
+  .textBaghdad {
+    transform: scale(0.5);
+    top: 1rem;
+    right: -7rem;
+  }
+
+  .textPopup {
+    transform: scale(0.4);
+    top: -8.5rem;
+    left: -13.5rem;
+  }
+
+  .textPopupGif {
+    transform: scale(0.4);
+    top: -6rem;
+    left: -13rem;
+  }
+
+  .textPortal {
+    transform: scale(0.3);
+    top: 14.5rem;
+    left: 18rem;
+  }
+
+  .textCar {
+    transform: scale(0.3);
+    top: 15rem;
+    left: 18.5rem;
+  }
 }
-@media only screen and (max-width: 480px) {
-}
+
+@media only screen and (max-width: 480px) {}
+
 video {
   display: block;
   margin: 0 auto;

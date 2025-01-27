@@ -4,20 +4,24 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
 .screen-bg {
   position: absolute;
   z-index: 99;
   top: 2rem;
   zoom: 0.9;
 }
+
 .ai-gif {
   position: absolute;
   z-index: 100;
   top: 5rem;
   zoom: 0.8;
-  object-fit: cover; /* Ensures the image fits without distortion */
+  object-fit: cover;
+  /* Ensures the image fits without distortion */
   clip-path: ellipse(100% 64% at 50% 65%);
 }
+
 .crop-img {
   clip-path: ellipse(95% 65% at 50% 42%);
 }
@@ -29,18 +33,21 @@
   left: 20rem;
   transition: left 0.5s ease-in-out;
 }
+
 .right-hand {
   position: absolute;
   z-index: 100;
   bottom: 0;
   right: 30rem;
 }
+
 .textEliza {
   position: absolute;
   bottom: 12rem;
   right: 5rem;
   zoom: 70%;
 }
+
 .clickEliza {
   position: absolute;
   bottom: 40rem;
@@ -72,6 +79,7 @@
   outline: none;
   font-size: 40px;
 }
+
 .inputCountry {
   position: absolute;
   top: 44rem;
@@ -83,6 +91,7 @@
   outline: none;
   font-size: 40px;
 }
+
 .inputMail {
   position: absolute;
   top: 51rem;
@@ -94,6 +103,7 @@
   outline: none;
   font-size: 40px;
 }
+
 .btnSubmit {
   position: absolute;
   z-index: 100;
@@ -109,3 +119,69 @@
   left: 40rem;
   border-radius: 5%;
 }
+
+
+.formSubmitSuccess {
+  right: 59rem;
+  bottom: 53rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .clickEliza {
+    zoom: 30%;
+    bottom: 25rem;
+    right: 33rem;
+  }
+
+  .textEliza {
+    zoom: 30%;
+
+  }
+
+  .putItToTest {
+    zoom: 0.5
+  }
+
+  .btnSubmit {
+    zoom: 39%;
+    right: 28.1rem;
+  }
+
+  .inputName {
+    zoom: 34%;
+    top: 36rem;
+    right: 24rem;
+  }
+
+  .inputCountry {
+    zoom: 34%;
+    top: 43rem;
+    right: 24rem;
+  }
+
+  .inputMail {
+    zoom: 34%;
+    top: 49rem;
+    right: 25rem;
+  }
+
+  .formSubmit {
+    zoom: 40%;
+    top: 18rem;
+  }
+
+  .formSubmitSuccess {
+    right: 53rem;
+    bottom: 44rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {}

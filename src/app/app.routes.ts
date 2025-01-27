@@ -1,5 +1,3 @@
-import { AboutComponent } from "./pages/about/about.component";
-import { ContactComponent } from "./pages/contact/contact.component";
 import { HomeComponent } from "./pages/home/home.component";
 import { Routes } from "@angular/router";
 import { OpeningComponent } from "./pages/opening/opening.component";
@@ -12,9 +10,7 @@ export const routes: Routes = [
   { path: "opening", component: OpeningComponent },
   { path: "main", component: MainStoryComponent },
   { path: "lab", component: LabComponent },
-  { path: "ai-screen", component: AiScreenComponent },
-  { path: "about", component: AboutComponent },
-  { path: "contact", component: ContactComponent },
+  { path: "ai-screen", component: AiScreenComponent }
 ];
 
 export const sectionScroll = [
